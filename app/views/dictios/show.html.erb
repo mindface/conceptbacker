@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @dictio %>
+
+<div>
+  <%= link_to "Edit this dictio", edit_dictio_path(@dictio) %> |
+  <%= link_to "Back to dictios", dictios_path %>
+
+  <%= button_to "Destroy this dictio", @dictio, method: :delete %>
+</div>

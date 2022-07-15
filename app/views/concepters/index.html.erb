@@ -1,0 +1,15 @@
+<div id="concepter"></div>
+<p style="color: green"><%= notice %></p>
+
+<h1>Concepters</h1>
+
+<div id="concepters">
+  <% @concepters.each do |concepter| %>
+    <%= render concepter %>
+    <p>
+      <%= link_to "Show this concepter", concepter %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New concepter", new_concepter_path %>

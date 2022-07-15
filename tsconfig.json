@@ -1,0 +1,13 @@
+{
+ "compilerOptions": {
+   "esModuleInterop": true,
+   "moduleResolution": "node",
+   "jsx": "react",
+   "lib": ["ES2021","dom"],
+   "module": "es2015",
+   "outDir": "build",
+   "sourceMap": true,
+   "strict": true,
+   "target": "es5"
+ },
+}

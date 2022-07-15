@@ -1,0 +1,23 @@
+<div id="<%= dom_id imaring %>">
+  <p>
+    <strong>Name:</strong>
+    <%= imaring.name %>
+  </p>
+
+  <p>
+    <strong>Conectid:</strong>
+    <%= imaring.conectid %>
+  </p>
+
+  <div class="imarging-box">
+    <ul class="list">
+      <li class="item">
+        <%= imaring.name %>
+        <% imaring.images.each do | image | %>
+         <%= image_tag(image, width:100) %>
+        <% end %>
+        <%= link_to 'delete', imaring, method: :delete, data: { confirm: 'delete ok' }  %>
+      </li>
+    </ul>
+  </div>
+</div>

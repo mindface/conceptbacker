@@ -1,0 +1,52 @@
+<%= form_with(model: dictio) do |form| %>
+  <% if dictio.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(dictio.errors.count, "error") %> prohibited this dictio from being saved:</h2>
+
+      <ul>
+        <% dictio.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :disc, style: "display: block" %>
+    <%= form.text_area :disc %>
+  </div>
+
+  <div>
+    <%= form.label :env, style: "display: block" %>
+    <%= form.text_field :env %>
+  </div>
+
+  <div>
+    <%= form.label :levelise, style: "display: block" %>
+    <%= form.text_field :levelise %>
+  </div>
+
+  <div>
+    <%= form.label :goal, style: "display: block" %>
+    <%= form.text_field :goal %>
+  </div>
+
+  <div>
+    <%= form.label :rate, style: "display: block" %>
+    <%= form.number_field :rate %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

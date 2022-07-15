@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: MyString
+  disc: MyText
+  env: MyString
+  levelise: MyString
+  goal: MyString
+  rate: 1
+
+two:
+  user_id: MyString
+  disc: MyText
+  env: MyString
+  levelise: MyString
+  goal: MyString
+  rate: 1

@@ -1,0 +1,9 @@
+<div id="imarings">
+  <% @videos.each do |video| %>
+    <%= render video %>
+    <p>
+      <%= link_to "Show this videoinfo", video %>
+    </p>
+  <% end %>
+</div>
+<%= link_to "New videos", new_video_path %>

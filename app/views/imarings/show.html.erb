@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @imaring %>
+
+<div>
+  <%= link_to "Edit this imaring", edit_imaring_path(@imaring) %> |
+  <%= link_to "Back to imarings", imarings_path %>
+
+  <%= button_to "Destroy this imaring", @imaring, method: :delete %>
+</div>

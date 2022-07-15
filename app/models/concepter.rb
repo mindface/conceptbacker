@@ -1,0 +1,2 @@
+class Concepter < ApplicationRecord
+end

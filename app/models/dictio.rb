@@ -1,0 +1,2 @@
+class Dictio < ApplicationRecord
+end

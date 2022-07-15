@@ -1,0 +1,19 @@
+<div id="<%= dom_id video %>">
+  <p>
+    <strong>title:</strong>
+    <%= video.title %>
+  </p>
+  <p>
+    <strong>introduction:</strong>
+    <%= video.introduction %>
+  </p>
+  <p>
+    <strong>Conectid:</strong>
+    <%= video.conectid %>
+  </p>
+
+  <p>
+    <strong>video:</strong>
+    <%= rails_blob_path(video.video) %>
+  </p>
+</div>

@@ -1,0 +1,42 @@
+<%= form_with(model: concepter) do |form| %>
+  <% if concepter.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(concepter.errors.count, "error") %> prohibited this concepter from being saved:</h2>
+
+      <ul>
+        <% concepter.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.label :info, style: "display: block" %>
+    <%= form.text_area :info %>
+  </div>
+
+  <div>
+    <%= form.label :path, style: "display: block" %>
+    <%= form.text_field :path %>
+  </div>
+
+  <div>
+    <%= form.label :info, style: "display: block" %>
+    <%= form.text_area :info %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

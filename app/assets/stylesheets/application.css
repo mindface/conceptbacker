@@ -1,0 +1,302 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.p-1 {
+  padding: 8px;
+}
+.p-2 {
+  padding: 16px;
+}
+.p-3 {
+  padding: 24px;
+}
+.p-4 {
+  padding: 32px;
+}
+.p-5 {
+  padding: 40px;
+}
+
+.pr-1 {
+  padding-right: 8px;
+}
+.pr-2 {
+  padding-right: 16px;
+}
+.pr-3 {
+  padding-right: 24px;
+}
+.pr-4 {
+  padding-right: 32px;
+}
+.pr-5 {
+  padding-right: 40px;
+}
+
+.pl-1 {
+  padding-left: 8px;
+}
+.pl-2 {
+  padding-left: 16px;
+}
+.pl-3 {
+  padding-left: 24px;
+}
+.pl-4 {
+  padding-left: 32px;
+}
+.pl-5 {
+  padding-left: 40px;
+}
+
+.pb-1 {
+  padding-bottom: 8px;
+}
+.pb-2 {
+  padding-bottom: 16px;
+}
+.pb-3 {
+  padding-bottom: 24px;
+}
+.pb-4 {
+  padding-bottom: 32px;
+}
+.pb-5 {
+  padding-bottom: 40px;
+}
+
+.m-1 {
+  margin: 8px;
+}
+.m-2 {
+  margin: 16px;
+}
+.m-3 {
+  margin: 24px;
+}
+.m-4 {
+  margin: 32px;
+}
+.m-5 {
+  margin: 40px;
+}
+
+.ml-1 {
+  margin-left: 8px;
+}
+.ml-2 {
+  margin-left: 16px;
+}
+.ml-3 {
+  margin-left: 24px;
+}
+.ml-4 {
+  margin-left: 32px;
+}
+.ml-5 {
+  margin-left: 40px;
+}
+
+.mr-1 {
+  margin-right: 8px;
+}
+.mr-2 {
+  margin-right: 16px;
+}
+.mr-3 {
+  margin-right: 24px;
+}
+.mr-4 {
+  margin-right: 32px;
+}
+.mr-5 {
+  margin-right: 40px;
+}
+
+.mb-1 {
+  margin-bottom: 8px;
+}
+.mb-2 {
+  margin-bottom: 16px;
+}
+.mb-3 {
+  margin-bottom: 24px;
+}
+.mb-4 {
+  margin-bottom: 32px;
+}
+.mb-5 {
+  margin-bottom: 40px;
+}
+
+.flex {
+  display: flex;
+}
+.flex-w {
+  flex-wrap: wrap;
+}
+.f-just-c {
+  justify-content: center;
+}
+.f-align-c {
+  align-items: center;
+}
+.d-i {
+  display: inline-block;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.position-tl {
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+}
+.position-tr {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+}
+.position-bl {
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+.position-br {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+.border {
+  border: 1px solid #2c387e;
+}
+.radius {
+  border-radius: 8px;
+}
+.bg-w-c {
+  background-color: #fff;
+}
+.bg-base-c {
+  background-color: #2c387e;
+}
+.font-c-w {
+  color: #fff;
+}
+
+.box-shadow {
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 1px -2px,
+    rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px;
+}
+
+.w-half {
+  max-width: 50%;
+  width: 100%;
+}
+
+.w-q {
+  max-width: 25%;
+  width: 100%;
+}
+
+.text-sub {
+  font-size: 10px;
+}
+.l-h {
+  line-height: 1;
+}
+
+@import url(react-draft-wysiwyg.css);
+
+.toolbar {
+  position: absolute;
+  top: -32px;
+  right: 0;
+}
+
+.textFieldBox .toolbar {
+  display: none;
+}
+.textFieldBox .disc-box {
+  display: none;
+}
+.textFieldBox .textarea {
+  min-width: 320px;
+}
+
+.textFieldBox:hover .toolbar,
+.textFieldBox:hover .disc-box {
+  display: block;
+}
+
+.toolbar .active {
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px #333 inset;
+}
+
+.toolbar .link-box {
+  z-index: 1;
+  width: 340px;
+  padding: 8px;
+  transform: translate(0, -10px);
+  background-color: #fff;
+}
+
+.hover-wapper .link-box {
+  display: none;
+}
+.hover-wapper.target:hover .target-box {
+  display: block;
+}
+.hover-wapper.target:hover .target-box-f {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  transition: box-shadow 0.2s;
+}
+
+.input:hover {
+  box-shadow: 0 0 1px 0 #2c387e inset;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}

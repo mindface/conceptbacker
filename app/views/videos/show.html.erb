@@ -1,0 +1,6 @@
+<% if @video.video.attached? %>
+  <p>title</p><%= @video.title %> <br>
+  <p>introduction</p><%=  @video.introduction %> <br>
+  <p>conectid</p><%= @video.conectid %> <br>
+  <p>video</p><video src="<%= rails_blob_path(@video.video) %>" type="video/mp4" controls></video><br>
+<% end %>
