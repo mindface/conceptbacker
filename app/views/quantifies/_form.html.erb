@@ -1,0 +1,47 @@
+<%= form_with(model: quantify) do |form| %>
+  <% if quantify.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(quantify.errors.count, "error") %> prohibited this quantify from being saved:</h2>
+
+      <ul>
+        <% quantify.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :title, style: "display: block" %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div>
+    <%= form.label :user_id, style: "display: block" %>
+    <%= form.text_field :user_id %>
+  </div>
+
+  <div>
+    <%= form.label :disc, style: "display: block" %>
+    <%= form.text_field :disc %>
+  </div>
+
+  <div>
+    <%= form.label :leveliseNum, style: "display: block" %>
+    <%= form.text_field :leveliseNum %>
+  </div>
+
+  <div>
+    <%= form.label :goalNum, style: "display: block" %>
+    <%= form.text_field :goalNum %>
+  </div>
+
+  <div>
+    <%= form.label :rateNum, style: "display: block" %>
+    <%= form.number_field :rateNum %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

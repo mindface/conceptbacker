@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @quantify %>
+
+<div>
+  <%= link_to "Edit this quantify", edit_quantify_path(@quantify) %> |
+  <%= link_to "Back to quantifies", quantifies_path %>
+
+  <%= button_to "Destroy this quantify", @quantify, method: :delete %>
+</div>

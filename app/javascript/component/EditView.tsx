@@ -13,9 +13,7 @@ function EditView(props: { viewId: number }) {
   const { viewId } = props
   const [bodyList, bodyListSet] = useState<Bodyist[]>([])
   const [expanded, setExpanded] = React.useState<string | false>(false)
-  const pattern = useSelector((state: RootStore) => {
-    return state.post.postDataItem
-  })
+  const pattern = useSelector((state: RootStore) => state.post.postDataItem)
 
   const handleChange =
     (panel: string) => (event: React.SyntheticEvent, isExpanded: boolean) => {

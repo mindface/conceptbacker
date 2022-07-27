@@ -53,6 +53,12 @@ function EditDictio(props: Props) {
     return result
   }
 
+  const reDataAction = () => {
+    console.log(dictio)
+    const text = dictio.disc
+    
+  }
+
 
   const handleModalSave = () => {
     const sendData = {
@@ -65,7 +71,6 @@ function EditDictio(props: Props) {
       goal: `${dictioIssue}|${dictioVariance}|${dictioAchieve}`,
       rate: setNumber(),
     }
-    console.log(sendData)
     if (editType === 'create') {
       delete sendData.id
       dispatch(AddDictioData(sendData))
@@ -252,6 +257,7 @@ function EditDictio(props: Props) {
               </Typography>
             </div>
             <div className="field">
+              <Button onClick={() => reDataAction()}>reDataAction</Button>
               <Button onClick={() => handleModalClose()}>閉じる</Button>
               {editType === 'create' ? (
                 <Button onClick={() => handleModalSave()}>追加</Button>

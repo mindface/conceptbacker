@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Quantifies</h1>
+
+<div id="quantifies">
+  <% @quantifies.each do |quantify| %>
+    <%= render quantify %>
+    <p>
+      <%= link_to "Show this quantify", quantify %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New quantify", new_quantify_path %>

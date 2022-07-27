@@ -1,0 +1,2 @@
+class Quantify < ApplicationRecord
+end
